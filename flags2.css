@@ -1,0 +1,68 @@
+.flag {
+	margin: 30px;
+	width: 600px;
+	height: 400px;
+	border: 1px solid black;
+	position: relative;   
+	overflow: hidden;     
+	display: flex;        
+}
+
+/* Flag of Belgium */
+/* Three equal vertical stripes: black, yellow, red */
+
+.black {
+	flex: 1;
+	height: 100%;
+	background-color: #000000;
+}
+
+.yellow {
+	flex: 1;
+	height: 100%;
+	background-color: #fae042;
+}
+
+.red {
+	flex: 1;
+	height: 100%;
+	background-color: #ed2939;
+}
+
+/* Flag of Japan */
+/* White field with a red circle (the "sun") centered on it */
+
+.japan {
+	background-color: #ffffff;
+}
+
+.japan .circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 240px;   
+	height: 240px;
+	background-color: #bc002d;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Flag of Trinidad and Tobago */
+/* Red field with a black diagonal band edged in white, running corner to corner */
+
+.trinidad {
+	background-color: #ce1126;
+}
+
+.trinidad .diagonal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 900px;   
+	height: 80px;
+	background-color: #000000;
+	border-top: 27px solid #ffffff;
+	border-bottom: 27px solid #ffffff;
+	/* angle = atan(400/600), the flag's own corner-to-corner angle */
+	transform: translate(-50%, -50%) rotate(33.69deg);
+}
